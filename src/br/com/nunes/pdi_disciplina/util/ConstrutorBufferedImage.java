@@ -37,4 +37,13 @@ public class ConstrutorBufferedImage {
         return imagem;
     }
 
+    public Color [][] imagemBufferedImageParaMatrizColor (BufferedImage imagem){
+        Color [] [] matrizColor = new Color[imagem.getWidth()][imagem.getHeight()];
+        for (int i = 0; i < matrizColor.length; i++) {
+            for (int j = 0; j < matrizColor[0].length; j++) {
+                matrizColor[i][j]=new Color(imagem.getRGB(i, j));
+            }
+        }
+        return matrizColor;
+    }
 }

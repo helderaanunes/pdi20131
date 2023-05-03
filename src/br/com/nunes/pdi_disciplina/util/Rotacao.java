@@ -15,7 +15,7 @@ public class Rotacao {
         //                  (primeira coluna).
         for (int i = 0 ; i<nova.length;i++){
             for (int j =0; j<nova[0].length;j++){
-                nova[i][j]=Color.black;
+                nova[i][j]=img[j][i];
             }
         }
         return nova;
